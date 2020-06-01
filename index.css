@@ -1,0 +1,15 @@
+#their-video {
+    width: 100%;
+    height: 50%;
+    max-height: 480px;
+    background-color: #eee;
+}
+
+
+#my-video {
+    margin-top: 15px;
+    width: 100%;
+    height: 50%;
+    max-height: 480px;
+    background-color: #eee;
+}

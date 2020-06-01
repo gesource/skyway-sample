@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>SkyWay JS SDK Tutorial</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<div class="pure-g">
+    <!-- Steps -->
+    <div class="pure-u-1-3">
+        <p>Your id: <span id="my-id">...</span><button id="qr-code-button">QR CODE</button></p>
+        <p>Share this id with others so they can call you.</p>
+        <h3>Make a call</h3>
+        <form id="make-call" class="pure-form">
+            <input type="text" placeholder="Call user id..." id="callto-id">
+            <button href="#" class="pure-button pure-button-success" type="submit">Call</button>
+        </form>
+        <form id="end-call" class="pure-form">
+            <p>Currently in call with <span id="their-id">...</span></p>
+            <button href="#" class="pure-button pure-button-success" type="submit">End Call</button>
+        </form>
+    </div>
+
+
+    <!-- Video area -->
+    <div class="pure-u-2-3" id="video-container">
+        <video id="their-video" autoplay></video>
+        <audio id="their-audio" autoplay></audio>
+        <video id="my-video" muted="true" autoplay></video>
+    </div>
+
+</div>
+<div id="dialog" style="display: none;"><canvas id="qrcode"></canvas></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+<script type="text/javascript" src="qrcode.min.js"></script>
+<script type="text/javascript" src="qrcode.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>
